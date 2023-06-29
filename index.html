@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="screen" id="city-screen">
+        <div class="screen__data">
+          <div class="logo">
+            <img
+              src="/images/logo.png"
+              alt="Weather App logo"
+              class="logo__img"
+            />
+          </div>
+          <h1 class="heading-primary">Weather App</h1>
+          <form class="input-box" id="form">
+            <input
+              type="text"
+              class="input"
+              id="input"
+              placeholder="City Name"
+            />
+            <button class="btn">Get!</button>
+          </form>
+          <p class="city-screen__sep">or</p>
+        </div>
+        <div class="screen__bottom">
+          <button class="btn" id="my-city-btn">My City</button>
+        </div>
+      </div>
+      <div class="screen hidden" id="weather-screen">
+        <div class="screen__data"></div>
+        <div class="screen__bottom">
+          <button class="btn" id="get-back-btn">Get Back!</button>
+        </div>
+      </div>
+    </main>
+    <script src="/src/main.js" type="module"></script>
+  </body>
+</html>
